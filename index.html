@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interactive Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Interactive Quiz</h1>
+      <p class="intro">Test your knowledge with this short quiz. Choose the best answer and click Next.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="quiz-section" class="quiz-section" aria-labelledby="quiz-title">
+      <h2 id="quiz-title">Quiz</h2>
+      <div id="quiz-card" class="quiz-card">
+        <div id="question-area" class="question-area" role="group" aria-labelledby="question-text">
+          <p id="question-text" class="question-text"></p>
+          <form id="options-form" class="options-form" aria-describedby="option-instructions">
+            <p id="option-instructions" class="sr-only">Select one option</p>
+            <div id="options-container" class="options-container"></div>
+          </form>
+        </div>
+
+        <div class="controls">
+          <button id="prev-btn" class="btn" type="button">Previous</button>
+          <button id="next-btn" class="btn primary" type="button">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="result-section" class="result-section hidden" aria-live="polite">
+      <h2>Result</h2>
+      <p id="score-text" class="score-text"></p>
+      <p id="feedback-text" class="feedback-text"></p>
+      <div class="result-controls">
+        <button id="restart-btn" class="btn" type="button">Restart Quiz</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Rohit kumar 2026. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
